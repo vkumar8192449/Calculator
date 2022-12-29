@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>कैलकुलेटर</title>
 </head>
 <body>
-    
+    <div id="screen">
+        <div id="output"></div>
+        <div id="coloms">
+            <div id="col1" class="coloms">
+                <button class="butts blue" onclick="allclr()">AC</button>
+                <button class="butts" onclick="edit('7')">7</button>
+                <button class="butts" onclick="edit('4')">4</button>
+                <button class="butts" onclick="edit('1')">1</button>
+                <button class="butts" onclick="edit('%')">%</button>
+            </div>
+            <div id="col2" class="coloms">
+                <button class="butts blue" onclick="edit('/')">/</button>
+                <button class="butts" onclick="edit('8')">8</button>
+                <button class="butts" onclick="edit('5')">5</button>
+                <button class="butts" onclick="edit('2')">2</button>
+                <button class="butts" onclick="edit('0')">0</button>
+            </div>
+            <div id="col3" class="coloms">
+                <button class="butts blue" onclick="edit('*')">x</button>
+                <button class="butts" onclick="edit('9')">9</button>
+                <button class="butts" onclick="edit('6')">6</button>
+                <button class="butts" onclick="edit('3')">3</button>
+                <button class="butts">,</button>
+            </div>
+            <div id="col4" class="coloms">
+                <button class="butts blue" onclick="back()">del</button>
+                <button class="butts blue" onclick="edit('-')">-</button>
+                <button class="butts blue" onclick="edit('+')">+</button>
+                <button class="butts eql" onclick="answer()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
