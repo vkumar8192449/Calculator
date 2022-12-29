@@ -79,3 +79,27 @@ body
 {
     color: #520cff;
 }
+#mode
+{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    display: flex;
+}
+#mode img
+{
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+}
+#shape
+{
+    position: absolute;
+    right: -85px;
+    top: -85px;
+    background-color: #520cff;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
